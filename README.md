@@ -101,3 +101,12 @@ A continuación te presentaremos los puntos que se tomarán en cuenta para la ca
 - Hacer el modo oscuro de la aplicación.
 - Cumplir con el diseño responsive que se proporcionan en el archivo Figma (para la vista mobile usa 375px, y para la vista desktop,1280px de ancho).
 - Alguna otra funcionalidad que le agregues, siempre y cuando respetes el diseño y el resto de funcionalidades ya definidas, también sumarán puntos extras.
+
+
+- pues profe a mi me cambia de estado a ascuro enla vista login y register solo que tiene que hacer click en las dos vistas al svg.
+
+- tiene por defecto fotos para admin y test ustedes la puedes cambiar a su gusto.
+
+- el modal malo de la parte de arriba le funciona la opcion My prfile y logout.
+
+- y ya lo unico malo son los estilos no soy muy bueno en eso 
