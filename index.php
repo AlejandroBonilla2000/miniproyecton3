@@ -3,7 +3,7 @@ session_start();
 include("conexion.php");
 
 if (!isset($_SESSION["usuario_id"])) {
-    header("Location: ../views/login.php"); // Updated path
+    header("Location: login.php"); 
     exit();
 }
 
@@ -59,7 +59,7 @@ $usuario_phone = $_SESSION["usuario_phone"];
                     <h3 class="pro">Profile</h3>
                     <p class="inf">Some info may be visible to other people</p>
                 </div>
-                <a href="editar_perfil.php" class="boton_edit">Edit</a> <!-- Updated path -->
+                <a href="editar_perfil.php" class="boton_edit">Edit</a>
             </div>
 
             <div class="photo">
