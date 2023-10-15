@@ -1,0 +1,57 @@
+.todo3 {
+  display: flex;
+  flex-direction: column; 
+}
+
+.enlacevolver { 
+    display: flex;
+    width: 3rem;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    margin-left: 18rem;
+    margin-top: 1px;
+    padding-bottom: 2rem;
+      
+  }
+  
+
+.chan {
+    margin-top: 10px; 
+    margin-left: 5rem;
+}
+  
+
+
+.editInfo { 
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    width: 845.91px;
+    height: 827.56px;
+    top: 150px;
+    left: 296.57px;
+    border-radius: 12px;
+    border: 1px solid;
+    position: absolute;
+    border: 1px solid gray;
+  }
+
+.mitad {
+  margin-top: 10px;
+  margin-bottom: 20px
+} 
+
+.svg-container {
+    display: grid;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+
+
+.lista {
+    display: grid;
+    list-style: none;
+    justify-content: flex-end;
+
+}

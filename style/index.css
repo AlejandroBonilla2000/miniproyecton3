@@ -1,0 +1,85 @@
+.todo1 {
+  flex-direction: column;
+}
+
+.dev1 {
+  display: flex;
+  text-align: left;  
+  justify-content: space-between;
+  padding: 1rem;
+  height: 3vh;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.perfil {
+  display: grid;
+  width: 845.91px;
+  height: 580.54px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 1); 
+  margin: 2rem auto; 
+  padding: 2rem;
+  gap: 0.31rem;
+  border-bottom: 1.5px solid gray;
+  
+}
+
+.profil {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 1.5px solid gray;
+  
+}
+
+.boton_edit {
+  width: 95.34px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 1); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.img {
+  width: 72px;
+  height: 72px;
+  top: 354.27px;
+  left: 577.31px;
+  border-radius: 8px;
+}
+.perfil > div {
+  border-bottom: 1.5px solid gray;
+  align-items: center; 
+  display: flex; 
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.mitad {
+  display: flex;
+  justify-content: start;
+  width: 33vw;
+}
+
+
+@media screen and (max-width: 768px) {
+  .perfil {
+    width: 90%; 
+  }
+  
+  .boton_edit {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
