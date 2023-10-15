@@ -1,20 +1,18 @@
 <?php
 session_start();
-include("./config/conexion.php");
+include("conexion.php");
 
 if (!isset($_SESSION["usuario_id"])) {
-    header("Location: login.php");
+    header("Location: ../views/login.php"); // Updated path
     exit();
 }
 
-    
 $usuario_id = $_SESSION["usuario_id"];
 $usuario_name = $_SESSION["usuario_nombre"];
 $usuario_email = $_SESSION["usuario_email"];
 $usuario_photo = $_SESSION["usuario_photo"];
 $usuario_bio = $_SESSION["usuario_bio"];
 $usuario_phone = $_SESSION["usuario_phone"];
-
 ?>
 
 <!DOCTYPE html>
@@ -46,13 +44,13 @@ $usuario_phone = $_SESSION["usuario_phone"];
                     <ul>
                         <li><a href="index.php">My Profile</a></li>
                         <li><a href="#">Group Chat</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="logout.php">Logout</a></li> <!-- Updated path -->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="titulo">
-            <h2>Personal info </h2>
+            <h2>Personal info</h2>
             <p>Basic info, like your name and photo</p>
         </div>
         <div class="perfil">
@@ -61,7 +59,7 @@ $usuario_phone = $_SESSION["usuario_phone"];
                     <h3 class="pro">Profile</h3>
                     <p class="inf">Some info may be visible to other people</p>
                 </div>
-                <a href="editar_perfil.php" class="boton_edit">Edit</a>
+                <a href="editar_perfil.php" class="boton_edit">Edit</a> <!-- Updated path -->
             </div>
 
             <div class="photo">
@@ -90,7 +88,6 @@ $usuario_phone = $_SESSION["usuario_phone"];
                 <p>PASSWORD</p>
                 <div class="mitad"> ******** </div>
             </div>
-
         </div>
     </div>
 </body>

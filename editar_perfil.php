@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("./config/conexion.php"); // Incluye un archivo de conexión a la base de datos
+include("conexion.php"); // Incluye un archivo de conexión a la base de datos
 
 if (!isset($_SESSION["usuario_id"])) {
     header("Location: login.php"); // Redirige al usuario a la página de inicio de sesión si no ha iniciado sesión
