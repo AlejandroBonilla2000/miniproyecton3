@@ -1,9 +1,9 @@
 <?php
 session_start();
-include("conexion.php"); // Incluye un archivo de conexión a la base de datos
+include "../db/conexion.php"; // Incluye un archivo de conexión a la base de datos
 
 if (!isset($_SESSION["usuario_id"])) {
-    header("Location: login.php"); // Redirige al usuario a la página de inicio de sesión si no ha iniciado sesión
+    header("Location: views/login.php"); // Redirige al usuario a la página de inicio de sesión si no ha iniciado sesión
     exit();
 }
 
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $photo_name = $_FILES["new_photo"]["name"];
         
         // Ruta para guardar en la carpeta "perfil" dentro de "public"
-        $photo_path = "public/perfil/" . $usuario_id . "_" . $photo_name;
+        $photo_path = "../public/perfil/" . $usuario_id . "_" . $photo_name;
         
         if (move_uploaded_file($tmp_name, $photo_path)) {
             // Si la carga de la foto de perfil fue exitosa, actualizar el campo "photo_url" en la base de datos
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["usuario_bio"] = $new_bio;
         $_SESSION["usuario_phone"] = $new_phone;
 
-        header("Location: index.php"); // Redirige al usuario a la página de inicio después de la actualización
+        header("Location: ../index.php"); // Redirige al usuario a la página de inicio después de la actualización
         exit();
     } else {
         $error = "Error al actualizar la información. Por favor, intente de nuevo.";
@@ -97,15 +97,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </svg>
                 <div class="options" id="options">
                     <ul class="lista">
-                        <li><a href="index.php">My Profile</a></li>
+                        <li><a href="../index.php">My Profile</a></li>
                         <li><a href="#">Group Chat</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="../logout.php">Logout</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div>
-            <a href="index.php" class="enlacevolver">Back</a>
+            <a href="../index.php" class="enlacevolver">Back</a>
             <div class="editInfo">
                 <div class="chan">
                     <h2>Change Info</h2>

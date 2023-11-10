@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("conexion.php");
+include_once "../db/conexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["usuario_bio"] = $fila["bio"];
             $_SESSION["usuario_phone"] = $fila["phone"];
 
-            header("Location: index.php");
+            header("location: /index.php");
             exit();
         } else {
             $error = "Credenciales incorrectas. Por favor, intente de nuevo.";
@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </h2>
 
             <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
-            <form method="post" action="login.php">
+            <form method="post" action="../views/login.php">
                 <div class="">
                     <input type="text" name="email" placeholder="Email" required class="input-container">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">

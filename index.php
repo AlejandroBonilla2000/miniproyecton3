@@ -1,10 +1,10 @@
 <?php
 session_start();
-include("conexion.php");
+include "db/conexion.php";
 
 if (!isset($_SESSION["usuario_id"])) {
-    header("Location: login.php"); 
-    exit();
+    header("location: views/login.php"); 
+    exit(); 
 }
 
 $usuario_id = $_SESSION["usuario_id"];
@@ -59,7 +59,7 @@ $usuario_phone = $_SESSION["usuario_phone"];
                     <h3 class="pro">Profile</h3>
                     <p class="inf">Some info may be visible to other people</p>
                 </div>
-                <a href="editar_perfil.php" class="boton_edit">Edit</a>
+                <a href="views/editar_perfil.php" class="boton_edit">Edit</a>
             </div>
 
             <div class="photo">
@@ -86,7 +86,7 @@ $usuario_phone = $_SESSION["usuario_phone"];
             </div>
             <div class="password">
                 <p>PASSWORD</p>
-                <div class="mitad"> ******** </div>
+                <div class="mitad">****</div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("conexion.php");
+include "../db/conexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Recopila los datos del formulario
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <img class="gih" src="/assets/Gihub.svg" alt="">
             </div>
 
-            <p>Already a member? <a href="login.php">Login</a></p>
+            <p>Already a member? <a href="/views/login.php">Login</a></p>
         </div>
     </div>
 </body>
