@@ -44,7 +44,7 @@ $usuario_phone = $_SESSION["usuario_phone"];
                     <ul>
                         <li><a href="index.php">My Profile</a></li>
                         <li><a href="#">Group Chat</a></li>
-                        <li><a href="logout.php">Logout</a></li> <!-- Updated path -->
+                        <li><a href="controller/logout.php">Logout</a></li> <!-- Updated path -->
                     </ul>
                 </div>
             </div>

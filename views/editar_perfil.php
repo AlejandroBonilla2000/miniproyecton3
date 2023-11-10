@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <ul class="lista">
                         <li><a href="../index.php">My Profile</a></li>
                         <li><a href="#">Group Chat</a></li>
-                        <li><a href="../logout.php">Logout</a></li>
+                        <li><a href="../controller/logout.php">Logout</a></li>
                     </ul>
                 </div>
             </div>
